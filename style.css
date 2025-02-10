@@ -1,0 +1,124 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #002244, #004488);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2em;
+    display: none;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://source.unsplash.com/1600x900/?cargo,shipping') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+
+.hero .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+/* Services */
+.services {
+    padding: 50px 20px;
+    background: linear-gradient(90deg, #f4f4f4, #e0e0e0);
+}
+
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-box {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.service-box:hover {
+    transform: scale(1.05);
+}
+
+/* Inquiry Form */
+.inquiry {
+    padding: 50px 20px;
+    background: white;
+}
+
+.inquiry input, .inquiry textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* Contact */
+.contact {
+    background: #002244;
+    color: white;
+    padding: 40px 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #001122;
+    color: white;
+    padding: 15px;
+}

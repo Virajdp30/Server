@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SARKAR Exim - Import & Export</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1 class="logo">SARKAR Exim</h1>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#inquiry">Inquiry</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="menu-btn" id="menu-toggle">☰</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="overlay">
+            <h2>Global Trade, Simplified</h2>
+            <p>Reliable Import & Export Solutions for Your Business</p>
+            <a href="#services" class="btn">Discover More</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-container">
+            <div class="service-box" onclick="showDetails('Global Imports', 'We import top-quality goods from global markets.')">
+                <i class="fas fa-globe"></i>
+                <h3>Global Imports</h3>
+            </div>
+            <div class="service-box" onclick="showDetails('Export Management', 'Efficient export logistics & compliance handling.')">
+                <i class="fas fa-shipping-fast"></i>
+                <h3>Export Management</h3>
+            </div>
+            <div class="service-box" onclick="showDetails('Customs & Compliance', 'Expert handling of customs & documentation.')">
+                <i class="fas fa-file-invoice"></i>
+                <h3>Customs & Compliance</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inquiry Form -->
+    <section id="inquiry" class="inquiry">
+        <h2>Get in Touch</h2>
+        <form id="inquiry-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <input type="tel" id="phone" placeholder="Your Phone" required>
+            <textarea id="message" placeholder="Your Inquiry" required></textarea>
+            <button type="submit" class="btn">Submit Inquiry</button>
+        </form>
+        <p id="form-status"></p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>📍 204, Suryadarshan Building, Opp HP Petrol Pump, Katrap, Badlapur East, 421503</p>
+        <p>📞 +91 9527012163</p>
+        <p>📧 <a href="mailto:sarkartraders071021@gmail.com">sarkartraders071021@gmail.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 SARKAR Exim. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
