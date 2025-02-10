@@ -1,35 +1,16 @@
-// Menu Toggle
-document.getElementById("menu-toggle").addEventListener("click", function () {
-    let navLinks = document.getElementById("nav-links");
-    navLinks.classList.toggle("show");
-    this.innerHTML = navLinks.classList.contains("show") ? "✖" : "☰";
-});
-
-// Inquiry Form
-document.getElementById("inquiry-form").addEventListener("submit", function (event) {
-    event.preventDefault();
-    let name = document.getElementById("name").value.trim();
-    let email = document.getElementById("email").value.trim();
-    let phone = document.getElementById("phone").value.trim();
-    let message = document.getElementById("message").value.trim();
-    let statusMessage = document.getElementById("form-status");
-
-    if (!name || !email || !phone || !message) {
-        statusMessage.style.color = "red";
-        statusMessage.innerText = "Please fill in all fields.";
-        return;
-    }
-
-    statusMessage.style.color = "green";
-    statusMessage.innerText = "Inquiry submitted successfully!";
-    document.getElementById("inquiry-form").reset();
-});
-
-// JavaScript for dynamic interactions, animations, or custom features
 document.addEventListener("DOMContentLoaded", function() {
-    // Example of an interactive button
-    const contactBtn = document.querySelector("button");
-    contactBtn.addEventListener("click", function() {
-        alert("Thank you for reaching out. We will get back to you soon!");
+    // Interactive Elements
+    const ctaBtn = document.querySelector('.cta-btn');
+    
+    // Button click event to trigger a contact prompt (simple interaction)
+    ctaBtn.addEventListener('click', function() {
+        alert("Thank you for reaching out! We will get back to you shortly.");
+    });
+
+    // Example of smooth scroll to the "Contact" section
+    const contactLink = document.querySelector('a[href="#contact"]');
+    contactLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector("#contact").scrollIntoView({ behavior: 'smooth' });
     });
 });
