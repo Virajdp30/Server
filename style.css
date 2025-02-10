@@ -1,20 +1,25 @@
- {
+/* Reset and Basic Styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background: #f4f4f4;
+    background: #f1f1f1;
     color: #333;
+    line-height: 1.6;
+    font-size: 16px;
 }
 
+/* Header and Navigation */
 header {
-    background-image: url('https://example.com/hero-background.jpg'); /* Attractive background image */
+    background-image: url('https://example.com/global-trade-background.jpg');
     background-size: cover;
     background-position: center;
-    padding: 50px 0;
+    padding: 80px 20px;
+    color: white;
     text-align: center;
 }
 
@@ -22,99 +27,114 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
-    padding: 10px 30px;
 }
 
-.navbar h1 {
+.navbar .logo {
     font-size: 2rem;
+    font-weight: bold;
 }
 
-nav ul {
+.nav-links {
     display: flex;
     list-style: none;
 }
 
-nav ul li {
-    margin-left: 20px;
+.nav-links li {
+    margin-left: 30px;
 }
 
-nav ul li a {
+.nav-links li a {
     text-decoration: none;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
+.nav-links li a:hover {
+    color: #FF6347;
+}
+
+/* Hero Section */
 .hero {
-    background-image: url('https://example.com/hero-banner.jpg'); /* Hero Section Background */
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
-    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
 }
 
-.hero-text h2 {
+.hero-content {
+    text-align: center;
+    max-width: 700px;
+}
+
+.hero h2 {
     font-size: 3rem;
     margin-bottom: 20px;
 }
 
-.hero-text p {
-    font-size: 1.2rem;
+.hero p {
+    font-size: 1.5rem;
     margin-bottom: 30px;
 }
 
-button {
-    padding: 10px 20px;
+.cta-btn {
+    padding: 12px 30px;
     background-color: #FF6347;
-    border: none;
     color: white;
-    cursor: pointer;
-    font-size: 1rem;
+    border: none;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
-button:hover {
+.cta-btn:hover {
     background-color: #e5533d;
 }
 
-section {
-    padding: 40px 20px;
+/* Section Styling */
+.section {
+    padding: 60px 20px;
     text-align: center;
-}
-
-#about, #contact {
-    background-color: #fff;
-    margin-top: 20px;
-    padding: 50px 20px;
-    border-radius: 8px;
-}
-
-#services {
-    background-color: #f8f8f8;
 }
 
 .service-cards {
     display: flex;
-    justify-content: center;
-    gap: 30px;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 40px;
 }
 
 .service-card {
-    background-color: #fff;
+    background-color: white;
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 280px;
     text-align: center;
 }
 
 .service-card h3 {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    font-size: 1rem;
+}
+
+.contact-section {
+    background-color: #f8f8f8;
+    margin-top: 30px;
+    padding: 50px 20px;
+    border-radius: 8px;
+}
+
+.contact-section a {
+    color: #FF6347;
+    text-decoration: none;
 }
 
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 20px 0;
 }
