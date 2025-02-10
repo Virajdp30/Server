@@ -24,3 +24,12 @@ document.getElementById("inquiry-form").addEventListener("submit", function (eve
     statusMessage.innerText = "Inquiry submitted successfully!";
     document.getElementById("inquiry-form").reset();
 });
+
+// JavaScript for dynamic interactions, animations, or custom features
+document.addEventListener("DOMContentLoaded", function() {
+    // Example of an interactive button
+    const contactBtn = document.querySelector("button");
+    contactBtn.addEventListener("click", function() {
+        alert("Thank you for reaching out. We will get back to you soon!");
+    });
+});
