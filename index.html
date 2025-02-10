@@ -3,78 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SARKAR Exim - Import & Export</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-
-    <!-- Header -->
     <header>
-        <h1 class="logo">SARKAR Exim</h1>
-        <nav>
-            <ul id="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#inquiry">Inquiry</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button class="menu-btn" id="menu-toggle">☰</button>
-        </nav>
+        <div class="navbar">
+            <h1>SARKAR Exim</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="overlay">
-            <h2>Global Trade, Simplified</h2>
-            <p>Reliable Import & Export Solutions for Your Business</p>
-            <a href="#services" class="btn">Discover More</a>
+        <div class="hero-text">
+            <h2>Global Import & Export Solutions</h2>
+            <p>Connecting businesses to the world with reliable services.</p>
+            <button onclick="window.location.href='#contact'">Get In Touch</button>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At SARKAR Exim, we specialize in global import and export services. We ensure the fastest, most secure transport of goods across the globe.</p>
+    </section>
+
+    <section id="services">
         <h2>Our Services</h2>
-        <div class="service-container">
-            <div class="service-box" onclick="showDetails('Global Imports', 'We import top-quality goods from global markets.')">
-                <i class="fas fa-globe"></i>
-                <h3>Global Imports</h3>
+        <div class="service-cards">
+            <div class="service-card">
+                <h3>International Shipping</h3>
+                <p>Fast and secure shipping worldwide.</p>
             </div>
-            <div class="service-box" onclick="showDetails('Export Management', 'Efficient export logistics & compliance handling.')">
-                <i class="fas fa-shipping-fast"></i>
-                <h3>Export Management</h3>
+            <div class="service-card">
+                <h3>Customs Clearance</h3>
+                <p>Efficient and hassle-free customs clearance services.</p>
             </div>
-            <div class="service-box" onclick="showDetails('Customs & Compliance', 'Expert handling of customs & documentation.')">
-                <i class="fas fa-file-invoice"></i>
-                <h3>Customs & Compliance</h3>
+            <div class="service-card">
+                <h3>Import & Export Consulting</h3>
+                <p>Expert consultation to help you navigate international trade.</p>
             </div>
         </div>
     </section>
 
-    <!-- Inquiry Form -->
-    <section id="inquiry" class="inquiry">
-        <h2>Get in Touch</h2>
-        <form id="inquiry-form">
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Your Email" required>
-            <input type="tel" id="phone" placeholder="Your Phone" required>
-            <textarea id="message" placeholder="Your Inquiry" required></textarea>
-            <button type="submit" class="btn">Submit Inquiry</button>
-        </form>
-        <p id="form-status"></p>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="contact">
+    <section id="contact">
         <h2>Contact Us</h2>
-        <p>📍 204, Suryadarshan Building, Opp HP Petrol Pump, Katrap, Badlapur East, 421503</p>
-        <p>📞 +91 9527012163</p>
-        <p>📧 <a href="mailto:sarkartraders071021@gmail.com">sarkartraders071021@gmail.com</a></p>
+        <p>Have a question? Reach out to us!</p>
+        <p>📞 Phone: +91 9527012163</p>
+        <p>📧 Email: <a href="mailto:Sarkarexim95@icloud.com">Sarkarexim95@icloud.com</a></p>
+        <p>📍 Location: 204, Suryadarshan Building, Opp HP Petrol Pump, Katrap, Badlapur East, 421503.</p>
     </section>
 
     <footer>
-        <p>&copy; 2025 SARKAR Exim. All Rights Reserved.</p>
+        <p>&copy; 2025 SARKAR Exim. All rights reserved.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
