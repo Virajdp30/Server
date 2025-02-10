@@ -25,7 +25,7 @@ app.post("/send-inquiry", (req, res) => {
 
     const mailOptions = {
         from: email,
-        to: "Sarkarexim95@icloud.com", // Your Business Email
+        to: "virajdp30@gmail.com", // Your Business Email
         subject: "New Client Inquiry - SARKAR Exim",
         text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`,
     };
